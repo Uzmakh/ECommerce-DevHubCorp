@@ -35,7 +35,7 @@ const Footer = () => {
     <footer className="bg-white w-full">
       {/* Top-Footer */}
       <div className="container py-10">
-        <div className="grid gap-8 lg:grid-cols-12">
+        <div className="grid gap-24 lg:grid-cols-12">
           {/* brand-logo */}
           <div className="lg:col-span-3">
             <div className="flex gap-2 items-center">
@@ -55,7 +55,7 @@ const Footer = () => {
             </div>
           </div>
           {/* footer-links */}
-          <div className="grid gap-6 lg:grid-cols-4 lg:col-span-6">
+          <div className="grid gap-10 lg:grid-cols-4 lg:col-span-6">
             {footerLinks.map(({ heading, items }) => (
               <div key={heading} className="space-y-3">
                 <h3 className="text-sm font-semibold text-gray-900">
