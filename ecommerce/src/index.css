@@ -28,7 +28,7 @@
 }
 
 @utility container {
-  @apply w-full max-w-[1280px] mx-auto px-22;
+  @apply w-full max-w-[1180px] mx-auto px-22;
 }
 
 img {

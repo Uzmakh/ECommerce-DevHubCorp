@@ -35,7 +35,7 @@ const Footer = () => {
     <footer className="bg-white w-full">
       {/* Top-Footer */}
       <div className="container py-10">
-        <div className="grid gap-24 lg:grid-cols-12">
+        <div className="grid gap-18 lg:grid-cols-12">
           {/* brand-logo */}
           <div className="lg:col-span-3">
             <div className="flex gap-2 items-center">
