@@ -80,7 +80,7 @@ const DealsAndOffers = () => {
     <section className="mt-8 bg-white rounded border border-gray-200 shadow-sm py-6 px-4">
       <div className="flex flex-col lg:flex-row gap-12">
         {/* Left Section: Countdown Timer */}
-        <div className="lg:w-80 flex-shrink-0 mb-8">
+        <div className="lg:w-72 flex-shrink-0 mb-8">
           <h2 className="text-2xl font-bold text-[#505050] -mt-2" s>
             Deals and offers
           </h2>
