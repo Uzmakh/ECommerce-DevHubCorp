@@ -27,7 +27,7 @@ const bottomLinks = [
 
 const Navbar = () => {
   return (
-    <header className=" bg-white w-full border-b shadow-sm">
+    <header className=" bg-white w-full  shadow-sm">
       {/* Top-Nav */}
       <div className="container flex items-center justify-between py-2">
         <div className="flex gap-2 items-center">
@@ -36,7 +36,7 @@ const Navbar = () => {
         </div>
 
         <form className="h-10 w-[50%] flex items-center rounded-sm border-2 border-blue-600 bg-gray-50 -px-2 py-2 focus-within:border-blue-600 focus-within:bg-white ">
-          {/* <div className="h-5 w-px ms-2 bg-gray-300 sm:block" aria-hidden /> */}
+          
           <input
             className="w-full bg-transparent px-3 text-sm text-gray-800 outline-none border-none placeholder:text-gray-400"
             type="search"
@@ -71,7 +71,7 @@ const Navbar = () => {
         </nav>
       </div>
       {/* Bottom-nav */}
-      <div className=" border-t border-gray-100">
+      <div className="border-t border-gray-100">
         <div className="container flex flex-wrap items-center justify-between">
           <div className="flex flex-wrap items-center py-2 gap-6 font-medium text-sm">
             {bottomLinks.map(({ label, icon: Icon, hasDropDown }) => (

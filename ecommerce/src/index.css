@@ -19,7 +19,7 @@
 
 @layer base {
   body {
-    @apply bg-gray-100;
+    @apply bg-[#e5f1ff];
   }
 
   input {
@@ -28,10 +28,14 @@
 }
 
 @utility container {
-  @apply w-full max-w-[1180px] mx-auto px-22;
+  @apply w-full max-w-[1180px] mx-auto lg:px-8;
 }
 
 img {
   display: inline-block;
   vertical-align: middle;
+}
+
+button {
+  @apply cursor-pointer;
 }
