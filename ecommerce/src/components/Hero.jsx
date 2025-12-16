@@ -37,7 +37,7 @@ const Hero = () => {
       {/* Middle hero banner */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-[url('./src/assets/middle-hero-image.png')] bg-cover bg-no-repeat bg-center " aria-hidden>
+          <div className="absolute inset-0 bg-[url('./src/assets/middle-hero-image.png')] bg-cover bg-no-repeat bg-center" aria-hidden>
             <div className="relative grid h-full grid-cols-1 gap-4 p-8 sm:grid-cols-2">
               <div className="flex flex-col pt-16">
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
