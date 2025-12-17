@@ -5,6 +5,7 @@ import DealsAndOffers from './components/DealsAndOffers'
 import Footer from './components/Footer'
 import HomeAndOutdoor from './components/HomeAndOutDoor'
 import ElecronicsAndGadgets from './components/ElecronicsAndGadgets'
+import SectionEnquiry from './components/SectionEnquiry'
 
 const App = () => {
   return (
@@ -14,7 +15,8 @@ const App = () => {
         <Hero />
         <DealsAndOffers />
         <HomeAndOutdoor />
-        <ElecronicsAndGadgets/>
+        <ElecronicsAndGadgets />
+        <SectionEnquiry/>
       </main>
       <Footer/>
     </>
