@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import DealsAndOffers from './components/DealsAndOffers'
 import Footer from './components/Footer'
 import HomeAndOutdoor from './components/HomeAndOutDoor'
+import ElecronicsAndGadgets from './components/ElecronicsAndGadgets'
 
 const App = () => {
   return (
@@ -12,7 +13,8 @@ const App = () => {
       <main className="container py-4">
         <Hero />
         <DealsAndOffers />
-        <HomeAndOutdoor/>
+        <HomeAndOutdoor />
+        <ElecronicsAndGadgets/>
       </main>
       <Footer/>
     </>

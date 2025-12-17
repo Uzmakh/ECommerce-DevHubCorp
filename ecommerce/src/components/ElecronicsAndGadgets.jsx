@@ -1,25 +1,25 @@
-import image1 from "../assets/hd-1image.png";
-import image2 from "../assets/hd-2image.png";
-import image3 from "../assets/hd-3image.png";
-import image4 from "../assets/hd-4image.png";
-import image5 from "../assets/hd-5image.png";
-import image6 from "../assets/hd-6image.png";
-import image7 from "../assets/hd-7image.png";
-import image8 from "../assets/hd-8image.png";
+import image1 from "../assets/eg-stopwatch.png";
+import image2 from "../assets/eg-camera.png";
+import image3 from "../assets/eg9-image.png";
+import image4 from "../assets/eg-12image.png";
+import image5 from "../assets/eg-headphones.png";
+import image6 from "../assets/eg-laptop.png";
+import image7 from "../assets/eg11-image.png";
+import image8 from "../assets/eg10-image.png";
 
 const productCategories = [
   {
-    title: "Soft chairs",
+    title: "Smart watches",
     price: 19,
     image: image1,
   },
   {
-    title: "Sofa & chair",
+    title: "Cameras",
     price: 19,
     image: image2,
   },
   {
-    title: "Kitchen dishes",
+    title: "Headphones",
     price: 19,
     image: image3,
   },
@@ -60,17 +60,18 @@ const HomeAndOutdoor = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              "url('./src/assets/living-room-blurry.png')",
+              "url('./src/assets/egbg-image.png')",
           }}
         />
 
         {/* Content */}
         <div className="relative flex h-full min-h-[257px] flex-col justify-start p-6">
           <h2 className="mb-4 font-bold text-[#1c1c1c] lg:text-[20px]">
-          
-            Home and
+            Consumer <br />
+            electronics and
+            <br/>gadgets
             <br />
-            outdoor
+            
           </h2>
           <button className="w-max rounded-lg bg-white px-8 py-3 text-[18px] font-semibold text-[#1c1c1c] shadow-md transition hover:shadow-lg">
             Source now
@@ -111,3 +112,4 @@ const HomeAndOutdoor = () => {
 };
 
 export default HomeAndOutdoor;
+

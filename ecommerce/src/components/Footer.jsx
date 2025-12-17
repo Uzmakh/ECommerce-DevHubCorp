@@ -1,7 +1,7 @@
 import LogoSymbol from "../assets/logo-symbol.png";
 import Brand from "../assets/Brand.png";
-import GetApp1 from "../assets/get-app-1.png";
-import GetApp2 from "../assets/get-app-2.png";
+import GetApp1 from "../assets/footer/get-app-1.png";
+import GetApp2 from "../assets/footer/get-app-2.png";
 import {
   TiSocialFacebook,
   TiSocialTwitter,
