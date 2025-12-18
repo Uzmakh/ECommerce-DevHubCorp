@@ -19,7 +19,7 @@
 
 @layer base {
   body {
-    @apply bg-[#e5f1ff];
+    @apply bg-[#f7fafc];
   }
 
   input {
