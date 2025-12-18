@@ -1,11 +1,14 @@
-
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import DealsAndOffers from './components/DealsAndOffers'
-import Footer from './components/Footer'
-import HomeAndOutdoor from './components/HomeAndOutDoor'
-import ElecronicsAndGadgets from './components/ElecronicsAndGadgets'
-import SectionEnquiry from './components/SectionEnquiry'
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import DealsAndOffers from "./components/DealsAndOffers";
+import Footer from "./components/Footer";
+import HomeAndOutdoor from "./components/HomeAndOutDoor";
+import ElecronicsAndGadgets from "./components/ElecronicsAndGadgets";
+import SectionEnquiry from "./components/SectionEnquiry";
+import SectionRecommended from "./components/SectionRecommended";
+import SectionService from "./components/SectionService";
+import SectionCountry from "./components/SectionCountry";
+import SectionNewsletter from "./components/SectionNewsletter";
 
 const App = () => {
   return (
@@ -16,11 +19,15 @@ const App = () => {
         <DealsAndOffers />
         <HomeAndOutdoor />
         <ElecronicsAndGadgets />
-        <SectionEnquiry/>
+        <SectionEnquiry />
+        <SectionRecommended />
+        <SectionService />
+        <SectionCountry />
       </main>
-      <Footer/>
+      <SectionNewsletter />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
