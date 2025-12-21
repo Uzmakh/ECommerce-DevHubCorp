@@ -1,33 +1,18 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import DealsAndOffers from "./components/DealsAndOffers";
-import Footer from "./components/Footer";
-import HomeAndOutdoor from "./components/HomeAndOutDoor";
-import ElecronicsAndGadgets from "./components/ElecronicsAndGadgets";
-import SectionEnquiry from "./components/SectionEnquiry";
-import SectionRecommended from "./components/SectionRecommended";
-import SectionService from "./components/SectionService";
-import SectionCountry from "./components/SectionCountry";
-import SectionNewsletter from "./components/SectionNewsletter";
+import { useState } from 'react'
+import HomePage from './pages/HomePage'
+import ProductList from './pages/ProductList';
 
 const App = () => {
+  const [page, setPage] = useState();
   return (
-    <>
-      <Navbar />
-      <main className="container py-4">
-        <Hero />
-        <DealsAndOffers />
-        <HomeAndOutdoor />
-        <ElecronicsAndGadgets />
-        <SectionEnquiry />
-        <SectionRecommended />
-        <SectionService />
-        <SectionCountry />
-      </main>
-      <SectionNewsletter />
-      <Footer />
-    </>
-  );
-};
+    <div>
+      <button onClick={()=>setPage("home")}>Home</button>
+      <button onClick={()=>setPage("productlist")}>ProductList</button>
 
-export default App;
+      {page === "home" && <HomePage />}
+      {page==="productlist" && <ProductList/>}
+    </div>
+  )
+}
+
+export default App
