@@ -103,7 +103,7 @@ const renderStars = (rating) => {
 };
 
 // List View Component
-const ListView = ({ displayedProducts, wishlist, onToggleWishlist }) => {
+const ListView = ({ displayedProducts, wishlist, onToggleWishlist, onProductClick }) => {
   return (
     <div className="space-y-4">
       {displayedProducts.map((product) => (
@@ -161,7 +161,10 @@ const ListView = ({ displayedProducts, wishlist, onToggleWishlist }) => {
             <p className="text-sm text-gray-600 mb-3 line-clamp-2">{product.description}</p>
 
             {/* View Details Button */}
-            <button className="text-[#0d6efd] text-sm font-medium hover:underline self-start">
+            <button 
+              onClick={() => onProductClick && onProductClick(product.id)}
+              className="text-[#0d6efd] text-sm font-medium hover:underline self-start"
+            >
               View details
             </button>
           </div>
@@ -172,10 +175,10 @@ const ListView = ({ displayedProducts, wishlist, onToggleWishlist }) => {
 };
 
 // Grid View Component
-const GridView = ({ displayedProducts }) => (
+const GridView = ({ displayedProducts, onProductClick }) => (
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {displayedProducts.map((product) => (
-      <div key={product.id} className="bg-white rounded border border-gray-300 p-4 flex flex-col hover:shadow-lg transition-shadow">
+      <div key={product.id} className="bg-white rounded border border-gray-300 p-4 flex flex-col hover:shadow-lg transition-shadow cursor-pointer">
         <img 
           src={product.image} 
           alt={product.name} 
@@ -195,13 +198,18 @@ const GridView = ({ displayedProducts }) => (
           ⭐ {product.rating} | {product.orders} orders
         </div>
         <p className="text-gray-600 text-sm mt-2 line-clamp-2">{product.description}</p>
-        <button className="text-[#0d6efd] mt-3 text-sm hover:underline self-start">View details</button>
+        <button 
+          onClick={() => onProductClick && onProductClick(product.id)}
+          className="text-[#0d6efd] mt-3 text-sm hover:underline self-start"
+        >
+          View details
+        </button>
       </div>
     ))}
   </div>
 );
 
-export default function ProductList() {
+export default function ProductList({ onProductClick }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [viewMode, setViewMode] = useState('list'); // 'list' or 'grid'
   const [verifiedOnly, setVerifiedOnly] = useState(false);
@@ -316,9 +324,13 @@ export default function ProductList() {
                     displayedProducts={displayedProducts} 
                     wishlist={wishlist}
                     onToggleWishlist={toggleWishlist}
+                    onProductClick={onProductClick}
                   />
                 ) : (
-                  <GridView displayedProducts={displayedProducts} />
+                  <GridView 
+                    displayedProducts={displayedProducts}
+                    onProductClick={onProductClick}
+                  />
                 )}
               </div>
 
