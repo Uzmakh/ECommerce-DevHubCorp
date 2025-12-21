@@ -27,7 +27,7 @@ const bottomLinks = [
 
 const Navbar = () => {
   return (
-    <header className=" bg-white w-full  shadow-sm">
+    <header className= "bg-white w-full shadow-sm border-b border-gray-300">
       {/* Top-Nav */}
       <div className="container flex items-center justify-between py-2">
         <div className="flex gap-2 items-center">
@@ -71,7 +71,7 @@ const Navbar = () => {
         </nav>
       </div>
       {/* Bottom-nav */}
-      <div className="border-t border-gray-100">
+      <div className="border-t border-gray-300">
         <div className="container flex flex-wrap items-center justify-between">
           <div className="flex flex-wrap items-center py-2 gap-6 font-medium text-sm">
             {bottomLinks.map(({ label, icon: Icon, hasDropDown }) => (
