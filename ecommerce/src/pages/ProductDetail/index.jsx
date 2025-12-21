@@ -522,42 +522,42 @@ export default function ProductDetail({ productId = 1 }) {
                         <table className="w-full">
                           <tbody>
                             <tr className="border-b border-gray-200">
-                              <td className="bg-gray-300 px-4 py-3 text-gray-600 font-medium w-1/3">
+                              <td className="bg-gray-300 px-4 py-2 text-gray-600 font-medium">
                                 Model
                               </td>
-                              <td className="px-4 py-3 text-gray-900">
+                              <td className="px-4 py-2 text-gray-900">
                                 #8786867
                               </td>
                             </tr>
                             <tr className="border-b border-gray-200">
-                              <td className="bg-gray-300 px-4 py-3 text-gray-600 font-medium">
+                              <td className="bg-gray-300 px-4 py-2 text-gray-600 font-medium">
                                 Style
                               </td>
-                              <td className="px-4 py-3 text-gray-900">
+                              <td className="px-4 py-2 text-gray-900">
                                 Classic style
                               </td>
                             </tr>
                             <tr className="border-b border-gray-200">
-                              <td className="bg-gray-300 px-4 py-3 text-gray-600 font-medium">
+                              <td className="bg-gray-300 px-4 py-2 text-gray-600 font-medium">
                                 Certificate
                               </td>
-                              <td className="px-4 py-3 text-gray-900">
+                              <td className="px-4 py-2 text-gray-900">
                                 ISO-898921212
                               </td>
                             </tr>
                             <tr className="border-b border-gray-200">
-                              <td className="bg-gray-300 px-4 py-3 text-gray-600 font-medium">
+                              <td className="bg-gray-300 px-4 py-2 text-gray-600 font-medium">
                                 Size
                               </td>
-                              <td className="px-4 py-3 text-gray-900">
+                              <td className="px-4 py-2 text-gray-900">
                                 34mm x 450mm x 19mm
                               </td>
                             </tr>
                             <tr>
-                              <td className="bg-gray-300 px-4 py-3 text-gray-600 font-medium">
+                              <td className="bg-gray-300 px-4 py-2 text-gray-600 font-medium">
                                 Memory
                               </td>
-                              <td className="px-4 py-3 text-gray-900">
+                              <td className="px-4 py-2 text-gray-900">
                                 36GB RAM
                               </td>
                             </tr>
@@ -573,25 +573,25 @@ export default function ProductDetail({ productId = 1 }) {
                       </h3>
                       <ul className="space-y-3">
                         <li className="flex items-start gap-3">
-                          <FaCheck className="text-gray-700 mt-1 flex-shrink-0" />
+                          <FaCheck className="text-gray-500 mt-1 flex-shrink-0" />
                           <span className="text-gray-600">
                             Some great feature name here
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <FaCheck className="text-gray-700 mt-1 flex-shrink-0" />
+                          <FaCheck className="text-gray-500 mt-1 flex-shrink-0" />
                           <span className="text-gray-600">
                             Lorem ipsum dolor sit amet, consectetur
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <FaCheck className="text-gray-700 mt-1 flex-shrink-0" />
+                          <FaCheck className="text-gray-500 mt-1 flex-shrink-0" />
                           <span className="text-gray-600">
                             Duis aute irure dolor in reprehenderit
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
-                          <FaCheck className="text-gray-700 mt-1 flex-shrink-0" />
+                          <FaCheck className="text-gray-500 mt-1 flex-shrink-0" />
                           <span className="text-gray-600">
                             Some great feature name here
                           </span>
@@ -784,26 +784,26 @@ export default function ProductDetail({ productId = 1 }) {
 
           {/* Related Products */}
           <div className="mb-6 bg-white border border-gray-200 p-2">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+            <h2 className="text-xl font-semibold text-gray-900 mt-4 ml-4">
               Related products
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
               {relatedProducts.map((item) => (
                 <div
                   key={item.id}
-                  className="bg-white rounded p-4 cursor-pointer"
+                  className="bg-white rounded cursor-pointer"
                 >
                   <img
                     src={item.image}
                     alt={item.name}
                     className="w-48 h-48 object-contain"
                   />
-                  <h3 className="font-medium text-gray-900 mb-2 line-clamp-2">
+                  <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
                     {item.name}
                   </h3>
 
                   <div className="flex items-baseline gap-2">
-                    <span className="text-lg font-bold text-gray-900">
+                    <span className="text-lg font-semibold text-gray-900">
                       ${item.price.toFixed(2)}
                     </span>
                     {item.originalPrice && (
