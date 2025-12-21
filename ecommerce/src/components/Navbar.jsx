@@ -27,7 +27,7 @@ const bottomLinks = [
 
 const Navbar = () => {
   return (
-    <header className= "bg-white w-full shadow-sm border-b border-gray-300">
+    <header className= "bg-white w-full shadow-sm border-b border-gray-300 mt-10">
       {/* Top-Nav */}
       <div className="container flex items-center justify-between py-2">
         <div className="flex gap-2 items-center">
