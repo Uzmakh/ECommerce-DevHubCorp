@@ -311,25 +311,28 @@ export default function ProductDetail({ productId = 1 }) {
                 </div>
 
                 {/* Tiered Pricing */}
-                <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
-                  <div className="space-y-2">
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700">50-100 pcs</span>
-                      <span className="text-lg font-bold text-gray-900">
+                <div className="bg-orange-100 rounded p-4 mb-6">
+                  <div className="space-y-2 flex items-center justify-around">
+                    <div className="flex flex-col items-center border-r border-gray-300 pe-4">
+                      <span className="text-lg font-bold text-[#f38332]">
                         $98.00
                       </span>
+                      <span className="text-sm text-gray-700">50-100 pcs</span>
+                     
                     </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700">100-700 pcs</span>
+                    <div className="flex flex-col items-center border-r border-gray-300 pe-4">
                       <span className="text-lg font-bold text-gray-900">
                         $90.00
                       </span>
+                      <span className="text-sm text-gray-700">100-700 pcs</span>
+                     
                     </div>
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-700">700+ pcs</span>
+                    <div className="flex flex-col items-center">
                       <span className="text-lg font-bold text-gray-900">
                         $78.00
                       </span>
+                      <span className="text-sm text-gray-700">700+ pcs</span>
+                      
                     </div>
                   </div>
                 </div>
@@ -787,7 +790,7 @@ export default function ProductDetail({ productId = 1 }) {
             <h2 className="text-xl font-semibold text-gray-900 mt-4 ml-4">
               Related products
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-3">
               {relatedProducts.map((item) => (
                 <div
                   key={item.id}
@@ -796,7 +799,7 @@ export default function ProductDetail({ productId = 1 }) {
                   <img
                     src={item.image}
                     alt={item.name}
-                    className="w-48 h-48 object-contain"
+                    className="w-40 h-40 object-contain p-4"
                   />
                   <h3 className="font-semibold text-gray-900 mb-2 line-clamp-2">
                     {item.name}
