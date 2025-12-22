@@ -2,6 +2,7 @@ import { useState } from 'react'
 import HomePage from './pages/HomePage'
 import ProductList from './pages/ProductList';
 import ProductDetail from './pages/ProductDetail';
+import AddToCart from './pages/AddToCart';
 
 const App = () => {
   const [page, setPage] = useState("productdetail");
@@ -18,11 +19,13 @@ const App = () => {
         <button onClick={()=>setPage("home")}>Home</button>
         <button onClick={()=>setPage("productlist")}>ProductList</button>
         <button onClick={()=>setPage("productdetail")}>ProductDetail</button>
+        <button onClick={()=>setPage("addtocart")}>AddToCart</button>
       </div>
 
       {page === "home" && <HomePage />}
       {page==="productlist" && <ProductList onProductClick={navigateToProductDetail} />}
       {page==="productdetail" && <ProductDetail productId={selectedProductId} />}
+      {page==="addtocart" && <AddToCart />}
     </div>
   )
 }
